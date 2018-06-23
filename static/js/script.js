@@ -115,3 +115,11 @@ var json_uri = "data:text/plain;base64," + window.btoa(JSON.stringify(parts));
 particlesJS.load('particles-js', json_uri, function() {
   console.log('callback - particles.js config loaded');
 });
+
+var portfolio_cards = document.querySelectorAll(".portfolio_card");
+
+for(var i = 0; i < portfolio_cards.length; i++) {
+  portfolio_cards[i].addEventListener('click', function () {
+    window.location.assign(Flask.url_for('portfolio', {product: this.dataset.name}));
+  });
+}
