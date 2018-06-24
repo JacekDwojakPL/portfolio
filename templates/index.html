@@ -12,7 +12,7 @@
   </head>
   <body>
     <div id="particles-js"></div>
-    <div class="root_container">
+    <div class="main_container">
       <div class="main_header">
         <div class="main_header_name">Jacek Dwojak</div>
         <div class="main_header_descrption">Musician &middot Web Developer &middot Programmer</div>
@@ -20,21 +20,34 @@
     </div>
     <div class="container">
       <hr>
-      <div class="row" id=greeting>
+      <div class="row">
       <div class="col-12 col-md-6">
-        <h2 id="greeting_section_header">Hello!</h2>
-        <p id="greeting_section_paragraph">
-          I'm Jacek, percussionist and web developer from Kraków, Poland intrested in combining music with computer science.
-          I primarily use Python, Flask and JavaScript in my projects, but learing new tool or language isn't a problem.
-          <br>I'm familiar with C, have practical knowledge about alghorithms, data structures (tries, linked-lists, etc), procedural and object-oriented programming.
+        <h2 class="section_header">Hello!</h2>
+        <p class="section_paragraph">
+          I'm Jacek, percussionist and self-taught web developer familiar with many technologies. My goal is to gain working experience in friendly environment.
+          In my projects I use following languages and frameworks:
+        </p>
+        <ul class="skills_list">
+              <li>C</li>
+              <li>Python</li>
+              <li>Flask</li>
+              <li>JavaScript</li>
+              <li>HTML5</li>
+              <li>socket.io<lo>
+        </ul>
+        <p class="section_paragraph">
+              Also I have knowledge about alghorithms (sorting, searching), data structures (tries, linked-lists, etc.)
+              and how to apply it in real world scenarios.
+              I am fully dedicated to learn new skills, to be good team member and to contribute as best as I can.
         </p>
       </div>
     </div>
   </div>
-      <div class="container portfolio_container" id="portfolio">
+      <div class="container portfolio_container">
         <hr>
-        <h2 id="portfolio_section_header">Portfolio</h2>
-        <p id="portfolio_section_paragraph">Choose project to learn more.</p>
+        <h2 class="section_header" id="portfolio">Portfolio</h2>
+        <p class="section_paragraph">Choose project to learn more.</p>
+        <!--portfolio row start -->
         <div class="row portfolio_row">
           <!-- start of Battleships column -->
           <div class="col-12 col-md-4 portfolio_card" data-name="battleships">
@@ -46,6 +59,7 @@
                  <i class="devicon-nginx-plain tech_icon"></i>
           </div>
       <!-- end of Battleships column -->
+      <!-- start of Stage Planner column -->
           <div class="col-12 col-md-4 portfolio_card" data-name="stageplanner">
                 <div class="portfolio_header">Stage Planner</div>
                 <p class="portfolio_paragraph">Online tool for stage layout creation</p>
@@ -54,6 +68,8 @@
                 <i class="devicon-d3js-plain"></i>
                 <i class="devicon-bootstrap-plain tech_icon"></i>
           </div>
+          <!-- end of Stage Planner column -->
+          <!-- start of Symphonic Backline column -->
           <div class="col-12 col-md-4 portfolio_card" data-name="symphonicbackline">
               <div class="portfolio_header">Symphonic Backline</div>
               <p class="portfolio_paragraph">Site for instruments rental company</p>
@@ -62,11 +78,13 @@
               <i class="devicon-bootstrap-plain tech_icon"></i>
               <i class="devicon-nginx-plain tech_icon"></i>
           </div>
+          <!-- end of Symphonic Backline column -->
         </div>
+      <!-- portfolio row end -->
       </div>
       <div class="container">
         <hr>
-        <h2 id="greeting_section_header">Contact</h2>
+        <h2 class="section_header">Contact</h2>
             <ul class="contact-list">
               <li class="contact-item"><a href="mailto:dwojak.jacek@gmail.com"><i class="fas fa-envelope tech_icon"></i>dwojak.jacek@gmail.com</a></li>
               <li class="contact-item"><a href="https://github.com/JacekDwojakPL"><i class="devicon-github-plain tech_icon"></i>GitHub</a></li>
