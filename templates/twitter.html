@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="U-XA-Compatible" content="IE=Edge">
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-grid.css') }}">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+      <title>Jacek Dwojak &middot Twitter Counter</title>
+  </head>
+  <body>
+    <div class="container product_container">
+      <h2 class="product_header">Twitter Counter</h2>
+      <div class="row">
+        <div class="col-12 col-md-8">
+            <p class="product_paragraph">Simple tool for fetching recent 200 tweets from an account and counting apperances of given word. Results are display on chart.</p>
+            <div class="row">
+              <div class="col"><img src="{{ url_for('static', filename='img/twitter/1.png') }}" alt="Symphonic Backline"></div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+          Powered by:
+          <ul class="tools_list">
+            <li class="tools_item"><i class="devicon-react-original-wordmark"></i>React</li>
+            <li class="tools_item"><i class="devicon-python-plain tech_icon"></i>Flask</li>
+            <li class="tools_item"><i class="devicon-javascript-plain tech_icon"></i>JavaScript</li>
+            <li class="tools_item"><i class="devicon-nginx-plain tech_icon"></i>Nginx</li>
+          </ul>
+          <div class="row">
+            <div class="col"><a href="http://18.197.74.56:84" target="_blank">Visit</a></div>
+            <div class="col"><a href="/#portfolio">Go back</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}" type="text/javascript"></script>
+    <script src="{{ url_for('static', filename='js/popper.min.js') }}" type="text/javascript"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}" type="text/javascript"></script>
+  </body>
+</html>
